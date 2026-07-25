@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yuki-programmer.github.io/savesmart-pages/sitemap.xml
