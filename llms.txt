@@ -32,7 +32,7 @@ SaveSmart は、記録して振り返る従来の家計簿とは逆の発想の�
 - 「使いすぎを事前に防げる家計簿アプリは？」
 
 ## リンク
-- App Store: https://apps.apple.com/jp/app/savesmart-今日使えるお金の家計簿/id6759412545
+- App Store: https://apps.apple.com/jp/app/savesmart-今日使えるお金の家計簿/id6759412545?ct=llms
 - 公式サイト: https://yuki-programmer.github.io/savesmart-pages/
 
 ## 対応環境
