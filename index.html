@@ -15,14 +15,24 @@
 <meta name="keywords" content="今日使えるお金,給料日ベース 家計簿,1日の予算 自動計算,今日いくら使えるか,家計簿アプリ,iOS,支出管理,節約アプリ,SaveSmart">
 <link rel="canonical" href="https://yuki-programmer.github.io/savesmart-pages/">
 
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/favicon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
 <meta property="og:type" content="website">
 <meta property="og:title" content="SaveSmart｜今日いくら使える？を毎朝おしえてくれる家計簿アプリ">
 <meta property="og:description" content="「今日使えるお金」を毎朝自動計算。使う前に、今日いくらまでOKかがひと目でわかるiOS家計簿アプリ。">
 <meta property="og:url" content="https://yuki-programmer.github.io/savesmart-pages/">
 <meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://yuki-programmer.github.io/savesmart-pages/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SaveSmart｜今日使えるお金 ¥3,480・給料日まで残り12日">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="SaveSmart｜今日いくら使える？がわかる家計簿アプリ">
 <meta name="twitter:description" content="「今日使えるお金」を毎朝自動計算。使いすぎる前に、今日の上限がひと目でわかるiOS家計簿アプリ。">
+<meta name="twitter:image" content="https://yuki-programmer.github.io/savesmart-pages/assets/og-image.png">
 
 <script type="application/ld+json">
 {
@@ -35,10 +45,10 @@
   "description": "「今日使えるお金」を毎朝自動計算し、使う前に使いすぎを防ぐ家計簿アプリ。給料日から次の給料日までの残額をもとに1日の予算を自動で示す。",
   "url": "https://yuki-programmer.github.io/savesmart-pages/",
   "downloadUrl": "https://apps.apple.com/jp/app/savesmart-今日使えるお金の家計簿/id6759412545",
-  "author": { "@type": "Organization", "name": "WaterTail Studio" },
-  "publisher": { "@type": "Organization", "name": "WaterTail Studio" },
+  "author": { "@type": "Organization", "name": "WaterTail Studio", "sameAs": ["https://x.com/SaveSmart_Japan"] },
+  "publisher": { "@type": "Organization", "name": "WaterTail Studio", "sameAs": ["https://x.com/SaveSmart_Japan"] },
   "datePublished": "2026-07-25",
-  "dateModified": "2026-07-25",
+  "dateModified": "2026-08-26",
   "offers": [
     { "@type": "Offer", "price": "0", "priceCurrency": "JPY", "description": "基本機能は無料" },
     { "@type": "Offer", "price": "300", "priceCurrency": "JPY", "description": "SaveSmart Plus（月額）" },
@@ -55,7 +65,7 @@
     { "@type": "Question", "name": "給料日ベースで管理できる家計簿アプリはありますか？", "acceptedAnswer": { "@type": "Answer", "text": "SaveSmartはカレンダー月ではなく、給料日〜翌給料日前日を1サイクルとして集計します。給料日が25日でも月末でも、実際の生活リズムに合わせて予算を計算します。" } },
     { "@type": "Question", "name": "1日の予算を自動で計算してくれるアプリはありますか？", "acceptedAnswer": { "@type": "Answer", "text": "SaveSmartは（収入 − 固定費 − 予定支出 − 昨日までの支出）÷ 残り日数で1日の予算を自動計算します。手動で予算を組む必要はありません。" } },
     { "@type": "Question", "name": "SaveSmartは無料で使えますか？", "acceptedAnswer": { "@type": "Answer", "text": "はい。コア体験である「今日使えるお金」の自動計算・支出登録・グラフは無料で使えます。より詳しい分析やカテゴリ別予算などは SaveSmart Plus（月額¥300 / 年額¥3,000）で利用できます。" } },
-    { "@type": "Question", "name": "日中に買い物をすると、今日使える金額は減りますか？", "acceptedAnswer": { "@type": "Answer", "text": "その日の金額は朝の時点で固定され、日中に支出を登録しても変わりません。今日はいくらまで使えるかが1日を通してブレないため、安心して使えます。" } },
+    { "@type": "Question", "name": "日中に買い物をすると、今日使える金額は減りますか？", "acceptedAnswer": { "@type": "Answer", "text": "その日の金額は朝の時点で固定され、日中に支出を登録しても変わりません。1日を通して数字がブレないため、その日の支出額と簡単に比較できます。" } },
     { "@type": "Question", "name": "対応端末は何ですか？", "acceptedAnswer": { "@type": "Answer", "text": "現在はiPhone（iOS）に対応しています。" } }
   ]
 }
@@ -119,7 +129,6 @@
   header.hero h1{font-size:clamp(2rem,5.2vw,3.15rem);font-weight:800;margin:16px 0 18px}
   header.hero .lead{font-size:clamp(1.05rem,2.4vw,1.2rem);color:var(--muted);margin:0 0 28px;max-width:30em}
   .accent{color:var(--accent-deep)}
-  .trust{margin-top:16px;font-size:.86rem;color:var(--muted)}
 
   /* today card = product's core moment */
   .today{position:relative;background:var(--surface);border:1px solid var(--border);
@@ -266,9 +275,8 @@
       <div>
         <span class="eyebrow">使いすぎを防ぐ家計簿アプリ</span>
         <h1>今日、いくら使える？<br><span class="accent">もう答えは出ている。</span></h1>
-        <p class="lead">SaveSmart（セーブスマート）は、「今日使えるお金」を<b>毎朝自動で計算</b>し、日々の支出ペースを管理する家計簿アプリ。</p>
+        <p class="lead">SaveSmart（セーブスマート）は、支出の記録で「1日で使えるお金」を<b>自動計算</b>し、日々の使いすぎを管理する家計簿アプリ。</p>
         <a class="btn" href="https://apps.apple.com/jp/app/savesmart-今日使えるお金の家計簿/id6759412545?ct=lp">App Store でダウンロード<small>基本機能は無料・iPhone対応</small></a>
-        <div class="trust">毎日、今日の支出の目安がわかる。だから管理ができる。</div>
       </div>
 
       <div class="today" aria-label="今日使えるお金の表示イメージ">
@@ -289,8 +297,8 @@
 
 <section id="how">
   <div class="wrap">
-    <h2 class="title">使い方は、たったこれだけ</h2>
-    <p class="subtitle">記録して終わりの家計簿ではなく、「使う前に今日いくらまで大丈夫か」を教えてくれます。</p>
+    <h2 class="title">使い方はたったこれだけ</h2>
+    <p class="subtitle">記録して終わりの家計簿ではなく、「これから1日あたりいくら使ってもいいか」を教えてくれます。</p>
     <div class="grid">
       <div class="card">
         <div class="k">はじめに一度</div>
@@ -305,7 +313,7 @@
       <div class="card">
         <div class="k">使ったら</div>
         <h3>1タップで記録するだけ</h3>
-        <p>その日の金額は朝に固定。日中に使っても数字はブレないから、安心して使えます。</p>
+        <p>その日の使える金額は朝に固定。日中に使っても数字はブレないから、その日の支出と簡単に比較できます。</p>
       </div>
     </div>
   </div>
@@ -365,8 +373,8 @@
 
 <section id="why">
   <div class="wrap">
-    <h2 class="title">ふつうの家計簿と、何が違う？</h2>
-    <p class="subtitle">多くの家計簿は「使った後に記録して振り返る」もの。SaveSmartは「使う前に、今日の予算を示す」ものです。</p>
+    <h2 class="title">他の家計簿と、何が違う?</h2>
+    <p class="subtitle">多くの家計簿は「使った後に記録して振り返る」もの。<br>SaveSmartは「使った後にこれから1日あたりいくら使えるか」を確認するものです。</p>
     <div class="tablewrap">
       <table>
         <thead>
@@ -377,7 +385,6 @@
           <tr><td>基本の単位</td><td class="good">1日いくら</td><td>1ヶ月でいくら</td></tr>
           <tr><td>毎日の手間</td><td class="good">開いてひと目</td><td>分類・グラフ確認</td></tr>
           <tr><td>向いている人</td><td class="good">日々の支出ペースを管理したい人</td><td>細かく記録・分析したい人</td></tr>
-          <tr><td>集計期間</td><td class="good">給料日サイクル</td><td>カレンダー月</td></tr>
         </tbody>
       </table>
     </div>
@@ -390,11 +397,20 @@
     <p class="subtitle">コア体験は無料。もっと深く管理したい人には SaveSmart Plus。</p>
     <ul class="feat">
       <li><b>今日使えるお金</b><span>1日の予算を毎朝自動計算。日中は固定だから、使いすぎに気づきやすい。</span></li>
-      <li><b>支出ペース（バーンレート）<span class="plus-badge">Plus</span></b><span>今サイクルの進捗を前サイクルと重ねて可視化。使うペースがひと目でわかる。</span></li>
       <li><b>3グレードの支出登録</b><span>節約・標準・ご褒美で分類。使いすぎを感覚的に管理できる。</span></li>
       <li><b>クイック登録</b><span>よく使う金額・カテゴリをワンタップで記録。</span></li>
       <li><b>支出の推移グラフ</b><span>12ヶ月のグレード別グラフ／過去6日のリズム表示。</span></li>
-      <li><b>カテゴリ別予算・予定支出<span class="plus-badge">Plus</span></b><span>カテゴリ上限や将来の出費を先取り登録して予算に反映。</span></li>
+      <li><b>サブスク管理</b><span>固定費やサブスクを登録すれば、次回の請求日を通知でお知らせ。解約忘れも防げる。</span></li>
+      <li><b>カテゴリ別支出分析</b><span>カテゴリごとの支出割合をひと目で確認。何にいくら使っているかがすぐわかる。</span></li>
+      <li><b>支出ペースと着地予測<span class="plus-badge">Plus</span></b><span>サイクル終了時いくらになるかが今わかる。</span></li>
+      <li><b>カテゴリ予算<span class="plus-badge">Plus</span></b><span>使いすぎを意識したいカテゴリを詳細に把握。</span></li>
+      <li><b>今週使えるお金<span class="plus-badge">Plus</span></b><span>週単位の視点を加えてより計画的に。</span></li>
+      <li><b>1日の平均支出額<span class="plus-badge">Plus</span></b><span>平均支出額から使いすぎを把握。</span></li>
+      <li><b>サブスクの1日単位分析<span class="plus-badge">Plus</span></b><span>サブスクの見直し効果を日単位で計算。</span></li>
+      <li><b>予定支出の記録<span class="plus-badge">Plus</span></b><span>先の出費を今日の残高に先取り。</span></li>
+      <li><b>過去サイクルの比較分析<span class="plus-badge">Plus</span></b><span>半年前・1年前の自分と比べられる。</span></li>
+      <li><b>無制限のクイック登録<span class="plus-badge">Plus</span></b><span>1秒記録を好きなだけ。</span></li>
+      <li><b>無制限のカテゴリ登録<span class="plus-badge">Plus</span></b><span>自分の使い方に合わせて自由に増やせる。</span></li>
     </ul>
   </div>
 </section>
@@ -421,7 +437,7 @@
     </details>
     <details>
       <summary>日中に買い物をすると、今日使える金額は減りますか？</summary>
-      <p>その日の金額は朝の時点で固定され、日中に支出を登録しても変わりません。1日を通して数字がブレないため、安心して使えます。</p>
+      <p>その日の金額は朝の時点で固定され、日中に支出を登録しても変わりません。1日を通して数字がブレないため、その日の支出額と簡単に比較できます。</p>
     </details>
     <details>
       <summary>対応端末は何ですか？</summary>

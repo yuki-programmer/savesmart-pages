@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: system-ui; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1200px;height:630px;overflow:hidden}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP","Segoe UI",sans-serif;
+    background:#FBFCFA;
+    color:#14231C;
+    position:relative;
+  }
+  .bg-accent{
+    position:absolute;top:-140px;right:-140px;width:520px;height:520px;border-radius:50%;
+    background:radial-gradient(circle,rgba(231,169,77,.30),transparent 68%);
+  }
+  .wrap{position:relative;width:1200px;height:630px;padding:64px 68px;display:flex;flex-direction:column;justify-content:space-between}
+  .brand{display:flex;align-items:center;gap:12px;font-size:26px;font-weight:800;letter-spacing:-.01em}
+  .logo{width:44px;height:44px;border-radius:13px;background:linear-gradient(145deg,#0FA968,#0A7A48);
+    display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:24px}
+  .main{display:flex;align-items:center;justify-content:space-between;gap:56px}
+  .left{max-width:560px}
+  .eyebrow{font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:#0A7A48;margin-bottom:18px;display:block}
+  h1{font-size:56px;line-height:1.28;font-weight:800;letter-spacing:-.02em;color:#14231C}
+  h1 .accent{color:#0A7A48}
+  .lead{margin-top:22px;font-size:22px;line-height:1.6;color:#5A6A62;font-weight:500}
+  .lead b{color:#14231C;font-weight:800}
+
+  .card{
+    position:relative;flex:0 0 420px;background:#F0F4F0;border:1px solid #DDE6E0;border-radius:28px;
+    padding:32px 30px 28px;box-shadow:0 24px 56px -28px rgba(20,35,28,.35);overflow:hidden;
+  }
+  .card::before{content:"";position:absolute;inset:0 0 auto 0;height:6px;background:linear-gradient(90deg,#E7A94D,#0FA968)}
+  .clabel{display:flex;justify-content:space-between;align-items:center;font-size:15px;color:#5A6A62;font-weight:700}
+  .clabel .status{color:#0A7A48}
+  .amount{font-size:76px;font-weight:800;letter-spacing:-.03em;margin-top:14px;font-variant-numeric:tabular-nums}
+  .amount .yen{font-size:.48em;font-weight:700;color:#5A6A62;margin-right:.1em}
+  .meta{color:#5A6A62;font-size:16px;margin-top:10px;font-variant-numeric:tabular-nums}
+  .grade{display:inline-flex;align-items:center;gap:8px;margin-top:22px;padding:8px 16px;border-radius:999px;
+    background:#E7EDE8;border:1px solid #DDE6E0;font-size:15px;font-weight:700;color:#14231C}
+  .dot{width:9px;height:9px;border-radius:50%;background:#0FA968}
+
+  .footer{font-size:18px;color:#5A6A62;font-weight:600}
+</style>
+</head>
+<body>
+<div class="bg-accent"></div>
+<div class="wrap">
+  <div class="brand"><span class="logo">S</span>SaveSmart</div>
+
+  <div class="main">
+    <div class="left">
+      <span class="eyebrow">使いすぎを防ぐ家計簿アプリ</span>
+      <h1>今日、いくら使える？<br><span class="accent">もう答えは出ている。</span></h1>
+      <p class="lead">「今日使えるお金」を<b>毎朝自動で計算</b>する<br>給料日ベースの家計簿アプリ</p>
+    </div>
+
+    <div class="card">
+      <div class="clabel"><span>今日使えるお金 · 7/16(水)</span><span class="status">標準ペース</span></div>
+      <div class="amount"><span class="yen">¥</span>3,480</div>
+      <div class="meta">給料日まで残り 12日</div>
+      <span class="grade"><span class="dot"></span>グレード：標準</span>
+    </div>
+  </div>
+
+  <div class="footer">yuki-programmer.github.io/savesmart-pages</div>
+</div>
+</body>
+</html>
