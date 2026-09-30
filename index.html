@@ -61,7 +61,7 @@
   "author": { "@type": "Organization", "name": "WaterTail Studio", "logo": "https://yuki-programmer.github.io/savesmart-pages/assets/apple-touch-icon.png", "sameAs": ["https://x.com/SaveSmart_Japan", "https://apps.apple.com/jp/app/savesmart-今日使えるお金の家計簿/id6759412545"] },
   "publisher": { "@type": "Organization", "name": "WaterTail Studio", "logo": "https://yuki-programmer.github.io/savesmart-pages/assets/apple-touch-icon.png", "sameAs": ["https://x.com/SaveSmart_Japan", "https://apps.apple.com/jp/app/savesmart-今日使えるお金の家計簿/id6759412545"] },
   "datePublished": "2026-07-25",
-  "dateModified": "2026-09-30",
+  "dateModified": "2026-10-01",
   "offers": [
     { "@type": "Offer", "price": "0", "priceCurrency": "JPY", "description": "基本機能は無料" },
     { "@type": "Offer", "price": "300", "priceCurrency": "JPY", "description": "SaveSmart Plus（月額）" },
@@ -182,7 +182,9 @@
 
   /* ---- steps / cards ---- */
   .grid{display:grid;gap:18px;grid-template-columns:repeat(3,1fr)}
+  #product-details .grid{grid-template-columns:repeat(2,1fr)}
   @media(max-width:760px){.grid{grid-template-columns:1fr}}
+  @media(max-width:760px){#product-details .grid{grid-template-columns:1fr}}
   .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:26px}
   .card .k{font-size:.72rem;font-weight:800;letter-spacing:.12em;color:var(--accent-deep);text-transform:uppercase}
   .card h3{margin:12px 0 8px;font-size:1.14rem;letter-spacing:-.01em}
@@ -450,6 +452,25 @@
   </div>
 </section>
 
+<section id="product-details">
+  <div class="wrap">
+    <h2 class="title">SaveSmartの計算と利用条件</h2>
+    <p class="subtitle">アプリの実際の画面と計算例、無料版とPlusの違いを公式情報として確認できます。</p>
+    <div class="grid">
+      <a class="card" href="./how-savesmart-calculates.html">
+        <span class="k">計算の一次情報</span>
+        <h3>「今日使えるお金」の計算方法</h3>
+        <p>給料日サイクル、差し引く支出、今日と明日の金額を実例で説明します。</p>
+      </a>
+      <a class="card" href="./features-pricing.html">
+        <span class="k">使う前に確認</span>
+        <h3>機能・料金と向いている人</h3>
+        <p>無料版とPlusの機能、料金、対応端末、手動入力の条件を一覧にしました。</p>
+      </a>
+    </div>
+  </div>
+</section>
+
 <section id="features">
   <div class="wrap">
     <h2 class="title">主な機能</h2>
@@ -547,6 +568,8 @@
       <a href="https://apps.apple.com/jp/app/savesmart-今日使えるお金の家計簿/id6759412545?ct=lp">App Store</a>
       <a href="./payday-budget.html">給料日ベースの家計管理</a>
       <a href="./daily-budget.html">1日の予算の決め方</a>
+      <a href="./how-savesmart-calculates.html">SaveSmartの計算方法</a>
+      <a href="./features-pricing.html">機能・料金</a>
       <a href="./start-budgeting.html">家計簿の始め方</a>
       <a href="./privacy.html">プライバシーポリシー</a>
       <a href="mailto:yuki.mizuo12@gmail.com">サポート（お問い合わせ）</a>
