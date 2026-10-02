@@ -61,7 +61,7 @@
   "author": { "@type": "Organization", "name": "WaterTail Studio", "logo": "https://yuki-programmer.github.io/savesmart-pages/assets/apple-touch-icon.png", "sameAs": ["https://x.com/SaveSmart_Japan", "https://apps.apple.com/jp/app/savesmart-今日使えるお金の家計簿/id6759412545"] },
   "publisher": { "@type": "Organization", "name": "WaterTail Studio", "logo": "https://yuki-programmer.github.io/savesmart-pages/assets/apple-touch-icon.png", "sameAs": ["https://x.com/SaveSmart_Japan", "https://apps.apple.com/jp/app/savesmart-今日使えるお金の家計簿/id6759412545"] },
   "datePublished": "2026-07-25",
-  "dateModified": "2026-10-01",
+  "dateModified": "2026-10-02",
   "offers": [
     { "@type": "Offer", "price": "0", "priceCurrency": "JPY", "description": "基本機能は無料" },
     { "@type": "Offer", "price": "300", "priceCurrency": "JPY", "description": "SaveSmart Plus（月額）" },
@@ -94,7 +94,7 @@
     { "@type": "Question", "name": "カテゴリ別に何にいくら使ったか確認できますか？", "acceptedAnswer": { "@type": "Answer", "text": "はい、無料で使えます。カテゴリごとの支出割合をひと目で確認でき、何にいくら使っているかが直感的にわかります。" } },
     { "@type": "Question", "name": "日中に買い物をすると、今日使える金額は減りますか？", "acceptedAnswer": { "@type": "Answer", "text": "その日の金額は朝の時点で固定され、日中に支出を登録しても変わりません。1日を通して数字がブレないため、その日の支出額と簡単に比較できます。" } },
     { "@type": "Question", "name": "対応端末は何ですか？", "acceptedAnswer": { "@type": "Answer", "text": "現在はiPhone（iOS）に対応しています。" } },
-    { "@type": "Question", "name": "支出や収入のデータはどこに保存されますか？", "acceptedAnswer": { "@type": "Answer", "text": "支出記録・収入・固定費・予算設定は端末内に保存され、外部サーバーには送信されません。アプリの利用状況やクラッシュ情報などの取り扱いはプライバシーポリシーをご確認ください。" } }
+    { "@type": "Question", "name": "支出や収入のデータはどこに保存されますか？", "acceptedAnswer": { "@type": "Answer", "text": "支出・収入・固定費・予算設定など入力データの原本は端末内に保存します。Firebaseには利用状況や、収入額を区分化した収入帯などの分析情報を送信します。詳しくはプライバシーポリシーをご確認ください。" } }
   ]
 }
 </script>
@@ -482,7 +482,7 @@
       <li><b>支出の推移グラフ</b><span>12ヶ月のグレード別グラフ／過去6日のリズム表示。</span></li>
       <li><b>サブスク管理</b><span>固定費やサブスクを登録すれば、次回の請求日を通知でお知らせ。解約忘れも防げる。</span></li>
       <li><b>カテゴリ別支出分析</b><span>カテゴリごとの支出割合をひと目で確認。何にいくら使っているかがすぐわかる。</span></li>
-      <li><b>家計データは端末内に保存</b><span>支出・収入・固定費・予算設定は端末内に保存。アプリ利用状況などの情報は<a href="./privacy.html">プライバシーポリシー</a>で公開しています。</span></li>
+      <li><b>家計データの原本は端末内に保存</b><span>支出・収入・固定費・予算設定は端末内に保存。収入帯やアプリ利用状況などの送信情報は<a href="./privacy.html">プライバシーポリシー</a>で公開しています。</span></li>
       <li><b>支出ペースと着地予測<span class="plus-badge">Plus</span></b><span>サイクル終了時いくらになるかが今わかる。</span></li>
       <li><b>カテゴリ予算<span class="plus-badge">Plus</span></b><span>使いすぎを意識したいカテゴリを詳細に把握。</span></li>
       <li><b>今週使えるお金<span class="plus-badge">Plus</span></b><span>週単位の視点を加えてより計画的に。</span></li>
@@ -548,7 +548,7 @@
     </details>
     <details>
       <summary>支出や収入のデータはどこに保存されますか？</summary>
-      <p>支出記録・収入・固定費・予算設定は端末内に保存され、外部サーバーには送信されません。アプリの利用状況やクラッシュ情報などの取り扱いは<a href="./privacy.html">プライバシーポリシー</a>をご確認ください。</p>
+      <p>支出・収入・固定費・予算設定など入力データの原本は端末内に保存します。Firebaseへ送信する収入帯や利用状況・診断情報の詳細は<a href="./privacy.html">プライバシーポリシー</a>をご確認ください。</p>
     </details>
     <p class="fine" style="text-align:center;margin-top:28px">解決しない場合は <a href="mailto:yuki.mizuo12@gmail.com">yuki.mizuo12@gmail.com</a> までお問い合わせください。</p>
   </div>
@@ -570,6 +570,7 @@
       <a href="./daily-budget.html">1日の予算の決め方</a>
       <a href="./how-savesmart-calculates.html">SaveSmartの計算方法</a>
       <a href="./features-pricing.html">機能・料金</a>
+      <a href="./why-not-ai.html">開発者の設計理由</a>
       <a href="./start-budgeting.html">家計簿の始め方</a>
       <a href="./privacy.html">プライバシーポリシー</a>
       <a href="mailto:yuki.mizuo12@gmail.com">サポート（お問い合わせ）</a>

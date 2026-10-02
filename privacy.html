@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>プライバシーポリシー - セーブスマート</title>
+    <title>SaveSmartのプライバシーポリシー｜家計データと分析情報の扱い</title>
+    <meta name="description" content="SaveSmartの支出・収入などの家計データは端末内に保存。Firebaseへ送る利用状況・収入帯・診断情報と、公式サイトのアクセス解析を分けて説明します。">
+    <link rel="canonical" href="https://yuki-programmer.github.io/savesmart-pages/privacy.html">
     <style>
         * {
             margin: 0;
@@ -71,6 +73,21 @@
             margin: 0;
             font-weight: 500;
         }
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0 28px;
+            font-size: 15px;
+        }
+        .summary-table th, .summary-table td {
+            border: 1px solid #dbe4ed;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .summary-table th { background: #edf4fb; }
+        .summary-table tbody th { width: 27%; }
+        .back-link { display: inline-block; margin-bottom: 20px; }
         hr {
             margin: 48px 0;
             border: none;
@@ -94,16 +111,28 @@
 </head>
 <body>
     <div class="container">
+        <a class="back-link" href="./">← SaveSmart公式サイト</a>
         <h1>プライバシーポリシー</h1>
-        <p class="update-date">最終更新日: 2026年1月28日</p>
+        <p class="update-date">SaveSmart（セーブスマート）／最終更新日: 2026年10月2日</p>
 
         <h2>はじめに</h2>
         <p>「セーブスマート」（以下「本アプリ」）は、お客様のプライバシーを尊重し、個人情報の保護に努めています。本プライバシーポリシーは、本アプリがどのような情報を収集し、どのように使用するかを説明します。</p>
 
+        <h2>最初に：保存先と送信される情報</h2>
+        <table class="summary-table">
+            <thead><tr><th scope="col">情報</th><th scope="col">扱い</th></tr></thead>
+            <tbody>
+                <tr><th scope="row">家計の入力データ</th><td>支出の金額・カテゴリ・メモ、収入の金額、固定費、設定などの原本は端末内に保存します。アプリがこれらの原本をFirebaseの分析用サーバーへ送信することはありません。</td></tr>
+                <tr><th scope="row">アプリの利用・診断情報</th><td>画面や機能の利用、支出の登録件数などのイベント、収入額を区分化した「収入帯」、クラッシュや動作性能の情報をFirebaseへ送信します。収入帯は金額そのものではありません。</td></tr>
+                <tr><th scope="row">公式サイトの閲覧情報</th><td>本サイトはGoogle Analyticsでページ閲覧、参照元、端末情報などを計測します。アプリ内の家計データは本サイトに入力しません。</td></tr>
+            </tbody>
+        </table>
+        <p>保存先が異なる情報を、以下でそれぞれ説明します。アプリからバックアップやCSVを自分で書き出して共有した場合は、選んだ共有先での扱いも確認してください。</p>
+
         <h2>収集する情報</h2>
 
         <h3>1. お客様が入力する情報</h3>
-        <p>本アプリでは、以下の情報をお客様の端末内にのみ保存します：</p>
+        <p>本アプリでは、以下の入力データの原本をお客様の端末内に保存します：</p>
         <ul>
             <li>支出記録（金額、カテゴリ、メモ、日時）</li>
             <li>収入情報</li>
@@ -112,7 +141,7 @@
             <li>アプリの設定（給料日、通貨表示形式など）</li>
         </ul>
         <div class="highlight">
-            <p>これらの情報は端末内にのみ保存され、外部サーバーには送信されません。</p>
+            <p>入力した支出・収入などの金額やメモの原本は、アプリの分析用サーバーへ送信しません。ただし、利用状況のイベントや収入帯など、原本から区分化・集計した情報は下記のとおり送信します。</p>
         </div>
 
         <h3>2. 自動的に収集される情報</h3>
@@ -121,6 +150,8 @@
         <p><strong>Firebase Analytics</strong></p>
         <ul>
             <li>アプリの使用状況（画面閲覧、機能の利用頻度）</li>
+            <li>支出の登録件数など、操作に関する集計値</li>
+            <li>メイン収入の金額を区分化した収入帯と通貨の種類（入力した金額そのものは含みません）</li>
             <li>端末の種類、OSバージョン</li>
             <li>アプリのバージョン</li>
             <li>国・地域（おおよその位置情報）</li>
@@ -158,19 +189,20 @@
 
         <h2>データの保存</h2>
         <ul>
-            <li>支出データ等のユーザーデータは、お客様の端末内にのみ保存されます</li>
+            <li>支出・収入・固定費などの入力データの原本は、お客様の端末内に保存されます</li>
             <li>分析データはFirebase（Google LLC）のサーバーに保存されます</li>
+            <li>バックアップやCSVを書き出して共有する場合は、お客様が選んだ保存先・共有先にファイルが渡ります</li>
         </ul>
 
         <h2>お客様の権利</h2>
         <p>お客様は以下の権利を有します：</p>
         <ul>
-            <li>アプリをアンインストールすることで、端末内のすべてのデータを削除できます</li>
-            <li>端末の設定から、分析データの収集を制限できます</li>
+            <li>アプリをアンインストールすると、アプリが端末内に保存したデータを削除できます。書き出して共有したファイルは共有先で別途管理してください</li>
+            <li>分析データの取り扱いについて、下記の連絡先へお問い合わせいただけます</li>
         </ul>
 
         <h2>公式サイト（本ページ）の解析</h2>
-        <p>本プライバシーポリシーを掲載している公式サイト（savesmart-pages）では、アクセス状況の把握のためGoogle Analytics（Google LLC）を利用しています。収集される情報にはページの閲覧状況、参照元、端末の種類などが含まれ、個人を特定する情報は含まれません。</p>
+        <p>本プライバシーポリシーを掲載している公式サイト（savesmart-pages）では、アクセス状況の把握のためGoogle Analytics（Google LLC）を利用しています。ページの閲覧状況、参照元、端末の種類などを計測します。これはアプリ内のFirebase Analyticsとは別のサイト計測です。</p>
 
         <h2>子どものプライバシー</h2>
         <p>本アプリは、13歳未満のお子様を対象としていません。13歳未満のお子様から意図的に個人情報を収集することはありません。</p>
@@ -187,19 +219,19 @@
         <hr>
 
         <h2>Privacy Policy (English)</h2>
-        <p class="update-date">Last updated: January 28, 2026</p>
+        <p class="update-date">Last updated: October 2, 2026</p>
 
         <h3>Introduction</h3>
         <p>"SaveSmart" ("the App") respects your privacy and is committed to protecting your personal information.</p>
 
         <h3>Information We Collect</h3>
-        <p><strong>Information You Provide:</strong> Expense records, income, fixed costs, budget settings, and app preferences are stored only on your device and are not sent to external servers.</p>
-        <p><strong>Automatically Collected Information:</strong> We collect app usage data, crash reports, and performance data through Firebase services for service improvement.</p>
+        <p><strong>Information You Provide:</strong> The original expense amounts, income amounts, notes, fixed costs, budgets, and app preferences are stored on your device. The app does not send these original records to Firebase Analytics. Files you explicitly export or share go to the destination you choose.</p>
+        <p><strong>Automatically Collected Information:</strong> Firebase receives app usage events, counts such as the number of expenses recorded, an income range derived from the main income amount, crash reports, and performance data. The income range is not the exact amount. Google Analytics separately measures visits to this website.</p>
 
         <h3>Your Rights</h3>
         <ul>
-            <li>Delete all data by uninstalling the app</li>
-            <li>Limit analytics data collection through device settings</li>
+            <li>Uninstall the app to delete data it stores on your device; exported copies must be managed at their destination</li>
+            <li>Contact us with questions about analytics data</li>
         </ul>
 
         <h3>Contact</h3>

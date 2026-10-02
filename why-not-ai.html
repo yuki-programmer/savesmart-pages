@@ -11,18 +11,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>なぜSaveSmartはAI任せにしないのか｜セーブスマート公式サイト</title>
-    <meta name="description" content="家計簿アプリにAIが搭載されるのが当たり前になった今、SaveSmartがあえてAIに計算や判断を任せない理由を説明します。">
+    <meta name="description" content="SaveSmart開発者が、今日使えるお金を決まった計算式で示す理由を説明。手動入力、当日の固定と翌日の再計算、Plusの着地予測との違いも具体例で紹介します。">
     <link rel="canonical" href="https://yuki-programmer.github.io/savesmart-pages/why-not-ai.html">
 
     <meta property="og:type" content="article">
     <meta property="og:title" content="なぜSaveSmartはAI任せにしないのか">
-    <meta property="og:description" content="家計簿アプリにAIが搭載されるのが当たり前になった今、SaveSmartがあえてAIに計算や判断を任せない理由。">
+    <meta property="og:description" content="今日使えるお金の計算にAIの推測を使わない理由と、実際のアプリの動作。">
     <meta property="og:url" content="https://yuki-programmer.github.io/savesmart-pages/why-not-ai.html">
     <meta property="og:locale" content="ja_JP">
     <meta property="og:image" content="https://yuki-programmer.github.io/savesmart-pages/assets/og-image.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="なぜSaveSmartはAI任せにしないのか">
-    <meta name="twitter:description" content="家計簿アプリにAIが搭載されるのが当たり前になった今、SaveSmartがあえてAIに計算や判断を任せない理由。">
+    <meta name="twitter:description" content="今日使えるお金の計算にAIの推測を使わない理由と、実際のアプリの動作。">
     <meta name="twitter:image" content="https://yuki-programmer.github.io/savesmart-pages/assets/og-image.png">
 
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -32,10 +32,10 @@
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "なぜSaveSmartはAI任せにしないのか",
-      "description": "家計簿アプリにAIが搭載されるのが当たり前になった今、SaveSmartがあえてAIに計算や判断を任せない理由。",
+      "description": "今日使えるお金の計算にAIの推測を使わない理由と、実際のアプリの動作。",
       "url": "https://yuki-programmer.github.io/savesmart-pages/why-not-ai.html",
       "datePublished": "2026-09-12",
-      "dateModified": "2026-09-12",
+      "dateModified": "2026-10-02",
       "author": { "@type": "Person", "name": "SaveSmart開発者", "url": "https://x.com/SaveSmart_Japan" },
       "publisher": { "@type": "Organization", "name": "WaterTail Studio", "logo": "https://yuki-programmer.github.io/savesmart-pages/assets/apple-touch-icon.png" },
       "mainEntityOfPage": "https://yuki-programmer.github.io/savesmart-pages/why-not-ai.html"
@@ -100,6 +100,11 @@
             font-size: 14px;
             color: #64748b;
         }
+        h2 { font-size: 20px; line-height: 1.45; margin: 36px 0 14px; }
+        .example { background: #eff6ff; border-left: 4px solid #3b82f6; border-radius: 0 8px 8px 0; padding: 18px 20px; margin: 22px 0; }
+        .example p:last-child { margin-bottom: 0; }
+        .related { margin-top: 28px; padding: 20px; border: 1px solid #dbe4ed; border-radius: 8px; }
+        .related p:last-child { margin-bottom: 0; }
         p {
             margin-bottom: 20px;
             color: #334155;
@@ -134,24 +139,27 @@
     <div class="container">
         <a class="back-link" href="./">← SaveSmartトップへ</a>
         <h1>なぜSaveSmartはAI任せにしないのか</h1>
-        <p class="update-date">2026年9月12日</p>
+        <p class="update-date">公開：2026年9月12日 ／ 更新：2026年10月2日</p>
         <p class="byline">SaveSmart開発者 ／ <a href="https://x.com/SaveSmart_Japan">@SaveSmart_Japan</a></p>
 
-        <p>家計簿アプリにAIが搭載されるのが当たり前になった。レシートを撮ればAIが仕分けし、支出パターンをAIが分析し、来月の予算までAIが提案してくれる。便利に見える。</p>
+        <p>SaveSmartを作るとき、僕が中心に置いたのは「今日いくら使えるか」を自分で確かめられることだった。AIに予算を提案させる方法もある。でも、毎日見る金額については、入力と計算の関係が分かる形を選んだ。</p>
 
-        <p>でも僕は一度立ち止まって考えた。AIは今も間違える。文章を書かせれば存在しない事実を混ぜ込み、画像を作らせれば指が6本になる。それ自体は笑い話で済む。</p>
+        <h2>今日の金額は、入力した数字から計算する</h2>
+        <p>給料日から次の給料日前日までを一つの期間とし、その期間の収入から固定費、昨日までの支出を引く。Plusで未確定の予定支出を登録していれば、その対象分も先に引く。残額を今日を含む残り日数で割る。これが「今日使えるお金」の基本だ。生成AIに支出額や予算額を推測させているわけではない。</p>
 
-        <p>お金の話は笑い話で済まない。</p>
+        <div class="example"><p><strong>数字で見ると：</strong>収入100,000円、固定費70,000円、昨日までの支出10,000円、残り5日なら、（100,000 − 70,000 − 10,000）÷ 5 ＝ <strong>4,000円</strong>。実際の計算条件や予定支出の扱いは<a href="./how-savesmart-calculates.html">「今日使えるお金」の計算方法</a>にまとめた。</p></div>
 
-        <p>AIが支出を「食費」ではなく「娯楽費」に誤分類したら、あなたが見ている予算の残額は最初から狂っている。AIが来月の支出を予測して「まだ余裕がある」と言ったら、その一言を信じて使い過ぎる人が出る。日記の誤字は読み返して笑えるが、家計の誤判定はその月の行動を変えてしまう。</p>
+        <h2>支出を記録しても、今日の目安は通常そのまま</h2>
+        <p>今日2,000円を使って記録した場合、今日の4,000円という目安は通常その日には変わらない。明日の見込みは、残り18,000円を4日で割った4,500円になる。給料日や収入など計算の前提を変更した場合は、今日の金額を再計算することもある。</p>
 
-        <p>金額の計算にはさらに厳しい条件がある。AIはわずかでも間違う可能性を消せないが、お金の計算に必要なのは確率ではなく確実性だ。同じ入力なら必ず同じ結果になるアルゴリズムでなければ金融の計算は任せられないと僕は考えている。</p>
+        <p>支出は自分で入力する。銀行口座やカード明細を自動で取り込んでAIが分類する方式ではない。手間はかかるが、何を記録したかを自分で確認できる。記録し忘れた支出があれば目安もずれるので、表示額を銀行残高や将来の貯蓄額だとは考えてほしくない。</p>
 
-        <p>だから僕はSaveSmartを作るときに「今日使えるお金」というシンプルな数字にこだわった。予測しない。推測しない。今この瞬間の残高から決めた期間で割った事実だけを見せる。派手さはないが、間違えようがない。</p>
+        <h2>Plusの「着地予測」との違い</h2>
+        <p>SaveSmart Plusには、今の支出ペースが続いた場合の着地予測がある。これは記録済みの支出から日平均を求め、残り日数と未確定の予定支出を使って計算する機能だ。将来の支出を確定する数字ではなく、条件付きの見込みとして読むものだ。「今日使えるお金」と着地予測は、役割が違う。</p>
 
-        <p>AIに家計管理を任せるということは判断そのものを機械に預けるということだ。僕が目指しているのはその逆だ。自分のお金を正確に把握し自分で判断できる状態を作ることにある。</p>
+        <p>僕が重視したのは、計算の前提と限界を利用者が追えること。毎日の目安を判断材料として示し、使うかどうかの判断は利用者自身に残したい。個人開発でSaveSmartを作り続けるうえでも、この設計を大切にしている。</p>
 
-        <p>便利さより信頼性でこのアプリの価値を感じてもらいたい。個人開発でSaveSmartを一人で作り続けている理由もここにある。</p>
+        <div class="related"><p><strong>あわせて確認</strong></p><p><a href="./how-savesmart-calculates.html">計算式とアプリ画面</a> ／ <a href="./features-pricing.html">無料版とPlusの機能・料金</a> ／ <a href="./privacy.html">入力データと分析情報の扱い</a></p></div>
 
         <div class="bio">SaveSmart開発者について — iOSアプリを一人で開発している個人開発者。企画からコード・数字周りの設計まで自分で担当している。</div>
 
