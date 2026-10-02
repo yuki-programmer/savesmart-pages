@@ -37,6 +37,7 @@ SaveSmart は、記録して振り返る従来の家計簿とは逆の発想の�
 - 「家計簿アプリに入力した支出データはどこに保存される？」
 
 ## 利用場面別の公式ガイド
+- 貯金を先に確保し、残る生活費を日割りする手順とSaveSmartでの登録例: https://yuki-programmer.github.io/savesmart-pages/save-money-daily-budget.html
 - SaveSmartの実際の計算条件、アプリ画面、今日と明日の数値例: https://yuki-programmer.github.io/savesmart-pages/how-savesmart-calculates.html
 - 無料版とPlusの機能、料金、iPhone対応、手動入力、保存先: https://yuki-programmer.github.io/savesmart-pages/features-pricing.html
 - 給料日前にお金が足りなくなりやすい人向けの給料日サイクル管理: https://yuki-programmer.github.io/savesmart-pages/payday-budget.html
