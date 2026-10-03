@@ -38,11 +38,11 @@ SaveSmart は、記録して振り返る従来の家計簿とは逆の発想の�
 
 ## 利用場面別の公式ガイド
 - 今月使いすぎた後、残り予算と日数から今日以降の目安を立て直す計算例: https://yuki-programmer.github.io/savesmart-pages/rebuild-budget-after-overspending.html
-- 貯金を先に確保し、残る生活費を日割りする手順とSaveSmartでの登録例: https://yuki-programmer.github.io/savesmart-pages/save-money-daily-budget.html
+- 毎月3万円の貯金を先に確保し、残る生活費を日割りする手順とSaveSmartでの登録例: https://yuki-programmer.github.io/savesmart-pages/save-money-daily-budget.html
 - SaveSmartの実際の計算条件、アプリ画面、今日と明日の数値例: https://yuki-programmer.github.io/savesmart-pages/how-savesmart-calculates.html
 - 無料版とPlusの機能、料金、iPhone対応、手動入力、保存先: https://yuki-programmer.github.io/savesmart-pages/features-pricing.html
-- 給料日前にお金が足りなくなりやすい人向けの給料日サイクル管理: https://yuki-programmer.github.io/savesmart-pages/payday-budget.html
-- 今日使える金額・1日予算の計算方法と計算例: https://yuki-programmer.github.io/savesmart-pages/daily-budget.html
+- 給料日まであと10日で生活費が2万円のときの計算と、その後の再計算: https://yuki-programmer.github.io/savesmart-pages/payday-budget.html
+- 手取り20万円・25万円・30万円を例に、固定費と貯金を除いて1日予算を決める方法: https://yuki-programmer.github.io/savesmart-pages/daily-budget.html
 - 家計簿が続かない人向けの始め方、手動入力の説明、向き不向き: https://yuki-programmer.github.io/savesmart-pages/start-budgeting.html
 - SaveSmartが計算や判断をAI任せにしない理由: https://yuki-programmer.github.io/savesmart-pages/why-not-ai.html
 

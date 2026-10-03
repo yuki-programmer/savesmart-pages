@@ -10,21 +10,21 @@
 </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>給料日前にお金が足りなくなる人へ｜給料日ベースの家計管理 | SaveSmart</title>
-  <meta name="description" content="給料日前にお金が足りなくなるときは、月末ではなく給料日から次の給料日までで家計を見直す方法があります。日々使える金額の考え方と、SaveSmartの仕組みを解説します。">
+  <title>給料日まであと10日、生活費が2万円なら？日割りのやりくり方法｜SaveSmart</title>
+  <meta name="description" content="給料日まであと10日で生活費が2万円なら、未払いの必要経費を確認したうえで1日2,000円が目安。使った翌日の再計算、足りない場合の見直し方、SaveSmartでの確認方法を説明します。">
   <link rel="canonical" href="https://yuki-programmer.github.io/savesmart-pages/payday-budget.html">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="給料日前にお金が足りなくなる人へ｜給料日ベースの家計管理">
-  <meta property="og:description" content="月末ではなく給料日から次の給料日までで考える家計管理と、毎日の予算の決め方を紹介します。">
+  <meta property="og:title" content="給料日まであと10日、生活費が2万円なら？">
+  <meta property="og:description" content="残る生活費を日割りし、支出後に翌日以降の予算を計算し直す方法。">
   <meta property="og:url" content="https://yuki-programmer.github.io/savesmart-pages/payday-budget.html">
   <meta property="og:image" content="https://yuki-programmer.github.io/savesmart-pages/assets/og-image.png">
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"Article",
-    "headline":"給料日前にお金が足りなくなる人へ｜給料日ベースの家計管理",
-    "description":"月末ではなく給料日から次の給料日までで考える家計管理と、毎日の予算の決め方を紹介します。",
+    "headline":"給料日まであと10日、生活費が2万円なら？日割りのやりくり方法",
+    "description":"残る生活費を日割りし、支出後に翌日以降の予算を計算し直す方法。",
     "datePublished":"2026-09-30","dateModified":"2026-10-03",
     "author":{"@type":"Person","name":"SaveSmart開発者","url":"https://x.com/SaveSmart_Japan"},
     "publisher":{"@type":"Organization","name":"WaterTail Studio"},
@@ -34,8 +34,8 @@
   <script type="application/ld+json">
   {
     "@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-      {"@type":"Question","name":"給料日前にお金が足りなくなるのを防ぐには？","acceptedAnswer":{"@type":"Answer","text":"給料日から次の給料日前日までを1サイクルとして、収入から固定費や予定支出を引いた残りを確認し、日々の支出ペースを把握する方法があります。SaveSmartはその日の目安額を毎朝表示します。支出を必ず防げるものではなく、記録した内容をもとに自分で判断するための目安です。"}},
-      {"@type":"Question","name":"給料日が月末ではなくても使えますか？","acceptedAnswer":{"@type":"Answer","text":"SaveSmartはカレンダー月ではなく給料日を基準にサイクルを設定します。給料日を登録すると、給料日から次の給料日前日までを1サイクルとして集計します。"}},
+      {"@type":"Question","name":"給料日まであと10日で生活費が2万円なら1日いくら使えますか？","acceptedAnswer":{"@type":"Answer","text":"2万円が未払いの必要経費を除いた生活費なら、今日を含む10日で割って1日2,000円が目安です。支払い予定が残っている場合は、その分を先に差し引いてから日割りします。"}},
+      {"@type":"Question","name":"給料日が月末や25日でも使えますか？","acceptedAnswer":{"@type":"Answer","text":"SaveSmartはカレンダー月ではなく給料日を基準にサイクルを設定します。給料日を登録すると、給料日から次の給料日前日までを1サイクルとして集計します。"}},
       {"@type":"Question","name":"SaveSmartは無料ですか？","acceptedAnswer":{"@type":"Answer","text":"今日使えるお金の自動計算、支出登録、グラフなどの基本機能は無料です。SaveSmart Plusは月額300円または年額3,000円です。最新の提供内容と価格はApp Storeの表示をご確認ください。"}}
     ]
   }
@@ -57,19 +57,30 @@
   <nav><a href="./">SaveSmart公式サイト</a><a href="./daily-budget.html">1日の予算</a><a href="./start-budgeting.html">家計簿の始め方</a></nav>
   <article>
     <span class="eyebrow">給料日前の家計管理</span>
-    <h1>給料日前にお金が足りなくなるとき、家計をどう見直す？</h1>
-    <p class="lead">毎月の予算が月末で区切られていると、給料日が月の途中にある人は生活のサイクルとずれて見えることがあります。給料日から次の給料日までをひとまとまりにして、残り期間の支出ペースを確認する方法を紹介します。</p>
+    <h1>給料日まであと10日、生活費が2万円なら？</h1>
+    <p class="lead">家賃や引き落としを除いた生活費が本当に20,000円なら、今日を含む10日で割った<strong>1日2,000円</strong>が最初の目安です。まず残額の中身を確かめ、使った後は翌日以降の目安を計算し直します。</p>
 
-    <h2>まずは給料日から次の給料日前日までで考える</h2>
-    <p>家賃や通信費などの固定費を確保したあと、残りのお金を次の給料日までどう使うか考えます。カレンダーの1日から月末までではなく、実際に収入が入る日をサイクルの起点にする考え方です。</p>
-    <div class="box"><p><strong>確認する金額の考え方</strong></p><p>サイクル内の収入 − 固定費 − （Plusで登録した予定支出） − これまでの支出 ＝ 残り期間に使える金額</p><p>この残額を残り日数で割ると、1日あたりの目安を出せます。固定費や支出を漏れなく登録できているかで目安の精度は変わります。</p></div>
+    <h2>口座の2万円をそのまま10で割らない</h2>
+    <p>まず、次の給料日前日までに払う家賃、通信費、返済、通院費などを確認します。口座に20,000円あっても、未払いの必要経費が6,000円なら、日々の生活費に回せるのは14,000円です。カードで既に使った分も確認してください。</p>
+    <div class="box"><p class="formula">（今使える残額 − まだ払っていない必要経費）÷ 今日を含む残り日数</p><p>未払い分を二重に引かないよう、固定費として既に確保した金額と区別します。給料日が月の途中なら、月末ではなく次の給料日前日までを数えます。</p></div>
 
-    <h2>例：給料日まであと10日、残りの生活費が30,000円の場合</h2>
-    <p>残り期間の生活費が30,000円で、日数が10日なら、単純な日割りの目安は1日3,000円です。ある日に3,000円より少なく使えば、差額は残りの日に回せます。反対に多く使った場合は、翌日以降の平均目安が下がります。</p>
-    <p>これは支出を制限するルールではありません。医療費や冠婚葬祭など、その日に必要な支出があれば優先し、目安を見ながら残りの日の使い方を調整します。</p>
+    <h2>計算例：生活費20,000円を残り10日で使う</h2>
+    <table class="table"><tbody>
+      <tr><th>必要経費を除いた残額</th><td>20,000円</td></tr>
+      <tr><th>今日を含む残り日数</th><td>10日</td></tr>
+      <tr><th>今日の目安</th><td>20,000 ÷ 10 ＝ <strong>2,000円</strong></td></tr>
+      <tr><th>今日1,500円使った場合</th><td>翌日は18,500 ÷ 9 ≒ <strong>2,056円</strong></td></tr>
+      <tr><th>今日3,000円使った場合</th><td>翌日は17,000 ÷ 9 ≒ <strong>1,889円</strong></td></tr>
+    </tbody></table>
+    <p>ある日2,000円を超えても、残りの生活費を残りの日で割り直せます。ただし、日割り額は毎日使い切る金額でも、必要な食事や医療を我慢するための上限でもありません。</p>
+    <p>もし20,000円の中から6,000円の支払いが残っていれば、（20,000 − 6,000）÷ 10 ＝ <strong>1,400円／日</strong>です。この額で必要な生活費が足りないなら、日割りだけで解決しようとせず、支払い予定と支出の優先順位を見直します。<a href="https://www.j-flec.go.jp/public/learn/glossary/k_kakei_kanri/">J-FLECの家計管理の説明</a>も参考になります。</p>
+
+    <h2>次の給料日を起点に、同じ不足を繰り返さない</h2>
+    <p>給料日まで乗り切ったら、次の給料日から翌給料日前日までを一つの期間として、収入から固定費や確保しておく支出を先に除きます。その残額を日割りすると、期間の前半で使いすぎた変化にも気づきやすくなります。今月すでに使いすぎた場合の手順は、<a href="./rebuild-budget-after-overspending.html">残り日数で予算を立て直す記事</a>で説明しています。</p>
 
     <h2>毎日計算し直す手間を減らす方法</h2>
-    <p>SaveSmartは、給料日から次の給料日前日までを1サイクルとして、登録した収入・固定費・予定支出と記録済みの支出をもとに「今日使えるお金」を計算します。その日の金額は朝に確定し、日中に支出を入力しても表示額は変わりません。翌日の目安は、残額と残り日数に合わせて更新されます。</p>
+    <p>SaveSmartは、給料日から次の給料日前日までを1サイクルとして、登録した収入・固定費・昨日までの支出をもとに「今日使えるお金」を計算します。SaveSmart Plusでは未確定の予定支出も先に確保できます。今日の金額は新しい日の情報を読み込むと計算・保存され、日中に支出を入力しても通常変わりません。翌日の見込みが、残額と残り日数に合わせて更新されます。</p>
+    <p>上の20,000円・10日という条件がアプリの登録内容にも反映されていれば、今日の表示は2,000円です。今日1,500円を記録した後も今日の表示は通常2,000円のままで、明日の見込みが約2,056円になります。記録していない支出や、登録していない支払いは計算に含まれません。</p>
     <p>銀行口座との自動連携を使う家計簿ではありません。給料日や固定費を自分で登録し、支出を記録して使う方式です。現在はiPhone（iOS）向けです。</p>
 
     <h2>給料日前の管理に向いているか確認する</h2>
@@ -82,8 +93,10 @@
     <a class="cta" href="https://apps.apple.com/jp/app/savesmart-今日使えるお金の家計簿/id6759412545?ct=payday-guide">App StoreでSaveSmartを見る</a>
 
     <h2>よくある質問</h2>
+    <details><summary>給料日まであと10日で生活費が2万円なら、1日いくら使えますか？</summary><p>未払いの必要経費を除いた20,000円なら、今日を含む10日で割って2,000円が目安です。支払い予定が残っていれば、先に差し引いてから日割りします。</p></details>
     <details><summary>給料日前の赤字を必ず防げますか？</summary><p>アプリは支出を自動で止めたり、将来の出費を保証したりするものではありません。入力した情報から日々の目安を示し、使い方を判断しやすくします。</p></details>
     <details><summary>給料日が月末や25日でも使えますか？</summary><p>給料日を設定して、その日から次の給料日前日までを1サイクルとして管理できます。</p></details>
+    <details><summary>SaveSmartは無料ですか？</summary><p>今日使えるお金の計算と支出記録などの基本機能は無料です。SaveSmart Plusは月額300円または年額3,000円です。最新の価格と条件はApp Storeで確認してください。</p></details>
     <details><summary>口座連携やクレジットカード連携はありますか？</summary><p>SaveSmartは支出を手動で記録するアプリです。銀行口座・カード明細の自動取得を主な目的とする場合は、その機能を備えたサービスも比較してください。</p></details>
     <p class="byline">執筆：SaveSmart開発者（WaterTail Studio）／更新日：2026年10月3日<br>本ページはSaveSmartの機能と家計管理の考え方を紹介する公式情報です。</p>
   </article>
