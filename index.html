@@ -61,7 +61,7 @@
   "author": { "@type": "Organization", "name": "WaterTail Studio", "logo": "https://yuki-programmer.github.io/savesmart-pages/assets/apple-touch-icon.png", "sameAs": ["https://x.com/SaveSmart_Japan", "https://apps.apple.com/jp/app/savesmart-今日使えるお金の家計簿/id6759412545"] },
   "publisher": { "@type": "Organization", "name": "WaterTail Studio", "logo": "https://yuki-programmer.github.io/savesmart-pages/assets/apple-touch-icon.png", "sameAs": ["https://x.com/SaveSmart_Japan", "https://apps.apple.com/jp/app/savesmart-今日使えるお金の家計簿/id6759412545"] },
   "datePublished": "2026-07-25",
-  "dateModified": "2026-10-02",
+  "dateModified": "2026-10-03",
   "offers": [
     { "@type": "Offer", "price": "0", "priceCurrency": "JPY", "description": "基本機能は無料" },
     { "@type": "Offer", "price": "300", "priceCurrency": "JPY", "description": "SaveSmart Plus（月額）" },
@@ -183,6 +183,7 @@
   /* ---- steps / cards ---- */
   .grid{display:grid;gap:18px;grid-template-columns:repeat(3,1fr)}
   #use-cases .grid{grid-template-columns:repeat(2,1fr)}
+  #use-cases .grid .card:last-child:nth-child(odd){grid-column:1/-1}
   #product-details .grid{grid-template-columns:repeat(2,1fr)}
   @media(max-width:760px){.grid{grid-template-columns:1fr}}
   @media(max-width:760px){#use-cases .grid{grid-template-columns:1fr}}
@@ -433,7 +434,7 @@
 <section id="use-cases">
   <div class="wrap">
     <h2 class="title">悩み・使い方から選ぶ</h2>
-    <p class="subtitle">給料日前のやりくり、貯金のための日割り予算、家計簿を続けるコツをそれぞれ詳しく紹介します。</p>
+    <p class="subtitle">給料日前のやりくり、使いすぎた後の立て直し、貯金のための日割り予算、家計簿を続けるコツを紹介します。</p>
     <div class="grid">
       <a class="card" href="./payday-budget.html">
         <span class="k">給料日前に足りなくなる</span>
@@ -454,6 +455,11 @@
         <span class="k">貯金したい</span>
         <h3>先取り貯蓄と日割りのやりくり術</h3>
         <p>貯金を先に分け、残る生活費から今日の目安を決める方法。</p>
+      </a>
+      <a class="card" href="./rebuild-budget-after-overspending.html">
+        <span class="k">今月使いすぎた</span>
+        <h3>残り日数で予算を立て直す方法</h3>
+        <p>使いすぎた後の残額から、今日以降の目安を計算し直します。</p>
       </a>
     </div>
   </div>
@@ -580,6 +586,7 @@
       <a href="./why-not-ai.html">開発者の設計理由</a>
       <a href="./start-budgeting.html">家計簿の始め方</a>
       <a href="./save-money-daily-budget.html">貯金と日割りのやりくり</a>
+      <a href="./rebuild-budget-after-overspending.html">使いすぎた後の立て直し</a>
       <a href="./privacy.html">プライバシーポリシー</a>
       <a href="mailto:yuki.mizuo12@gmail.com">サポート（お問い合わせ）</a>
       <a href="./en/">English</a>
