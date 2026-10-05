@@ -11,13 +11,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SaveSmartの「今日使えるお金」はどう計算される？｜公式ガイド</title>
-  <meta name="description" content="SaveSmartの「今日使えるお金」の計算方法を、実際のアプリ画面と数値例で説明。給料日サイクル、昨日までの支出、Plusの予定支出、当日の固定と翌日の再計算を確認できます。">
+  <meta name="description" content="SaveSmartの「今日使えるお金」の計算方法を、実際のアプリ画面と数値例で説明。自由に設定できる毎月の区切り日、昨日までの支出、Plusの予定支出、当日の固定と翌日の再計算を確認できます。">
   <link rel="canonical" href="https://yuki-programmer.github.io/savesmart-pages/how-savesmart-calculates.html">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/evidence-pages.css">
   <meta property="og:type" content="article">
   <meta property="og:title" content="SaveSmartの「今日使えるお金」はどう計算される？">
-  <meta property="og:description" content="給料日サイクルと実際の計算条件を、画面と数値例で説明します。">
+  <meta property="og:description" content="自分で設定した月ごとのサイクルと、実際の計算条件を画面と数値例で説明します。">
   <meta property="og:url" content="https://yuki-programmer.github.io/savesmart-pages/how-savesmart-calculates.html">
   <meta property="og:image" content="https://yuki-programmer.github.io/savesmart-pages/assets/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -26,9 +26,9 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "SaveSmartの「今日使えるお金」はどう計算される？",
-    "description": "給料日サイクルと実際の計算条件を、画面と数値例で説明します。",
+    "description": "自分で設定した月ごとのサイクルと、実際の計算条件を画面と数値例で説明します。",
     "datePublished": "2026-10-01",
-    "dateModified": "2026-10-02",
+    "dateModified": "2026-10-06",
     "author": {"@type": "Organization", "name": "WaterTail Studio"},
     "publisher": {"@type": "Organization", "name": "WaterTail Studio"},
     "mainEntityOfPage": "https://yuki-programmer.github.io/savesmart-pages/how-savesmart-calculates.html",
@@ -52,9 +52,9 @@
         <div>
           <span class="eyebrow">SAVE SMART / 公式の機能説明</span>
           <h1>「今日使えるお金」は<br>どう計算される？</h1>
-          <p class="lead">SaveSmartは、給料日から次の給料日前日までを1サイクルとして、残りのお金を残りの日数に分けます。このページではアプリの計算対象と、今日・明日の金額が変わる条件を説明します。</p>
+          <p class="lead">SaveSmartは、自分で決めた毎月の区切り日から次の区切り日前日までを1サイクルとして、残り予算を残りの日数に分けます。このページではアプリの計算対象と、今日・明日の金額の違いを説明します。</p>
           <a class="cta" href="#example">数値例を見る</a>
-          <p class="meta">WaterTail StudioによるSaveSmart公式情報／更新日：2026年10月2日</p>
+          <p class="meta">WaterTail StudioによるSaveSmart公式情報／更新日：2026年10月6日</p>
         </div>
         <figure class="screen">
           <img src="assets/savesmart-home-appstore.webp" width="600" height="1298" alt="SaveSmartのホーム画面。今日使えるお金、今日の支出、明日使えるお金を並べて表示している" fetchpriority="high">
@@ -64,9 +64,9 @@
 
       <section aria-labelledby="answer">
         <h2 id="answer">計算の短い答え</h2>
-        <p class="intro">まず、そのサイクルの収入から固定費と昨日までの支出を差し引きます。SaveSmart Plusで未確定の予定支出を登録している場合は、サイクル内の対象分も先に差し引きます。残った金額を、今日を含む残り日数で割った値が「今日使えるお金」です。</p>
+        <p class="intro">アプリの「収入」に設定した金額から、そのサイクルの固定費と昨日までの支出を差し引きます。SaveSmart Plusで未確定の予定支出を登録している場合は、サイクル内の対象分も先に差し引きます。残った金額を、今日を含む残り日数で割った値が「今日使えるお金」です。</p>
         <div class="formula">
-          （収入 − 固定費 − 昨日までの支出 − 対象の予定支出）÷ 今日を含む残り日数
+          （「収入」に設定した金額 − 固定費 − 昨日までの支出 − 対象の予定支出）÷ 今日を含む残り日数
           <small>予定支出の登録はSaveSmart Plusの機能です。計算結果は円単位に丸めます。</small>
         </div>
         <p class="note">この金額は日々の支出ペースを考えるための目安です。銀行残高そのものや、貯金できる金額を保証する表示ではありません。</p>
@@ -75,10 +75,11 @@
       <section aria-labelledby="inputs">
         <h2 id="inputs">何を、いつの分まで数える？</h2>
         <div class="grid">
-          <div class="panel"><span class="step-label">01 / 期間</span><h3>給料日から翌給料日前日</h3><p>給料日を25日に設定した場合、9月25日から10月24日までが1サイクルです。月末のない日付を設定した場合は、その月の末日を使います。</p></div>
+          <div class="panel"><span class="step-label">01 / 期間</span><h3>自分で決めた区切り日から次の区切り日前日</h3><p>区切り日を毎月25日にすると、9月25日から10月24日までが1サイクルです。給料日に合わせる必要はなく、1日や15日にも設定できます。設定日がない月は、その月の末日を使います。</p></div>
           <div class="panel"><span class="step-label">02 / 差し引く金額</span><h3>固定費と過去の支出</h3><p>そのサイクルの固定費と、サイクル開始日から昨日までに記録した支出を差し引きます。今日の支出は、今日の固定額には加えず、明日以降の計算に反映します。</p></div>
           <div class="panel"><span class="step-label">03 / Plusで追加</span><h3>未確定の予定支出</h3><p>Plusで予定支出を登録すると、計算する日からサイクル終了日までに予定されている未確定分を先に確保します。確定済みの予定は重複して差し引きません。</p></div>
         </div>
+        <p>アプリでは予算の元になる金額を「収入」と表示しています。実際の給与額に合わせても、その期間に使うと決めた額を設定してもかまいません。どちらの場合も、登録した固定費はその金額から差し引かれます。</p>
       </section>
 
       <section id="example" aria-labelledby="example-title">
@@ -104,7 +105,7 @@
       <section aria-labelledby="timing">
         <h2 id="timing">今日の金額が固定されるタイミング</h2>
         <p>SaveSmartは新しい日の情報を読み込むと、その日の金額を計算して保存します。通常、日中の支出登録で「今日使えるお金」は変わりません。「明日使えるお金」の見込みは、記録した支出に応じて変わります。</p>
-        <p>給料日や収入など計算の前提を変更した場合は、当日の金額を再計算することがあります。サイクル最終日には、翌日は新しいサイクルになるため、同じサイクルの「明日使えるお金」は算出しません。</p>
+        <p>区切り日や「収入」に設定した金額など、計算の前提を変更した場合は、当日の金額を再計算することがあります。サイクル最終日には、翌日は新しいサイクルになるため、同じサイクルの「明日使えるお金」は算出しません。</p>
       </section>
 
       <section aria-labelledby="limits">
