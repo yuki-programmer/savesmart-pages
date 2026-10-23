@@ -40,6 +40,10 @@ h2.title { letter-spacing: -.035em; }
 p.subtitle { margin-bottom: 32px; }
 .card, .d-card, .tablewrap, ul.feat li, details { background: var(--surface); box-shadow: 0 12px 30px -26px rgba(31, 41, 76, .3); }
 .card { border-radius: 26px; }
+#how .card { padding: 30px; }
+.feature-glyph { display: grid; place-items: center; width: 54px; height: 54px; margin-bottom: 24px; border-radius: 18px; background: var(--surface-2); color: var(--accent-deep); font-size: 2rem; font-weight: 600; line-height: 1; }
+.feature-glyph.bars { align-items: end; padding-bottom: 10px; font-size: 1.5rem; letter-spacing: -.08em; }
+.setup-note { margin: 25px auto 0; max-width: 600px; text-align: center; color: var(--muted); font-size: .86rem; }
 .d-card { border-radius: 30px; }
 .d-card::before { display: none; }
 .d-stat { background: var(--surface-2); }
