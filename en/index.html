@@ -20,10 +20,8 @@
 <link rel="alternate" hreflang="en" href="https://savesmartbudget.pages.dev/en/">
 <link rel="alternate" hreflang="x-default" href="https://savesmartbudget.pages.dev/">
 
-<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="../assets/favicon-192.png" sizes="192x192" type="image/png">
-<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="icon" href="../assets/app-icon.png" type="image/png">
+<link rel="apple-touch-icon" href="../assets/app-icon.png">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="SaveSmart | How Much Can I Spend Today? A Budget App That Tells You Every Morning">
@@ -33,7 +31,7 @@
 <meta property="og:image" content="https://savesmartbudget.pages.dev/assets/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="SaveSmart | Today's spendable money $23 · 12 days until payday">
+<meta property="og:image:alt" content="SaveSmart home screen and the message How much can you spend today?">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="SaveSmart | The Budget App That Tells You How Much You Can Spend Today">
 <meta name="twitter:description" content="SaveSmart calculates the money you can spend today, automatically, every morning. See your daily limit before you overspend.">
@@ -79,26 +77,26 @@
 
 <style>
   :root{
-    --bg:#FBFCFA; --surface:#F0F4F0; --surface-2:#E7EDE8; --border:#DDE6E0;
-    --ink:#14231C; --muted:#5A6A62; --accent:#0FA968; --accent-deep:#0A7A48; --dawn:#E7A94D;
+    --bg:#F3F4F9; --surface:#FFFFFF; --surface-2:#ECEEF6; --border:#E5E7EF;
+    --ink:#1D2030; --muted:#687282; --accent:#586FBB; --accent-deep:#4E65AD; --dawn:#E59028;
     --shadow:0 18px 48px -24px rgba(20,35,28,.35);
     --radius:20px; --maxw:1020px; --money-blue:#3B82E8; --money-red:#E5484D;
   }
   @media (prefers-color-scheme: dark){
     :root{
       --bg:#0B1310; --surface:#121C17; --surface-2:#18251E; --border:#223029;
-      --ink:#E9F1EC; --muted:#97A99F; --accent:#33D98A; --accent-deep:#33D98A; --dawn:#F0BC63;
+      --ink:#E9F1EC; --muted:#97A99F; --accent:#8CA0E3; --accent-deep:#8CA0E3; --dawn:#F0BC63;
       --shadow:0 24px 60px -28px rgba(0,0,0,.65);
     }
   }
   :root[data-theme="light"]{
-    --bg:#FBFCFA; --surface:#F0F4F0; --surface-2:#E7EDE8; --border:#DDE6E0;
-    --ink:#14231C; --muted:#5A6A62; --accent:#0FA968; --accent-deep:#0A7A48; --dawn:#E7A94D;
+    --bg:#F3F4F9; --surface:#FFFFFF; --surface-2:#ECEEF6; --border:#E5E7EF;
+    --ink:#1D2030; --muted:#687282; --accent:#586FBB; --accent-deep:#4E65AD; --dawn:#E59028;
     --shadow:0 18px 48px -24px rgba(20,35,28,.35);
   }
   :root[data-theme="dark"]{
     --bg:#0B1310; --surface:#121C17; --surface-2:#18251E; --border:#223029;
-    --ink:#E9F1EC; --muted:#97A99F; --accent:#33D98A; --accent-deep:#33D98A; --dawn:#F0BC63;
+    --ink:#E9F1EC; --muted:#97A99F; --accent:#8CA0E3; --accent-deep:#8CA0E3; --dawn:#F0BC63;
     --shadow:0 24px 60px -28px rgba(0,0,0,.65);
   }
 
@@ -269,13 +267,14 @@
   .d-barlegend .sw.red{background:var(--dawn)}
   @media (prefers-reduced-motion: reduce){.d-bar-fill{transition:none}}
 </style>
+<link rel="stylesheet" href="../assets/app-theme.css">
 </head>
 <body>
 
 <header class="hero">
   <div class="wrap">
     <div class="topbar">
-      <div class="brand"><span class="logo">S</span>SaveSmart</div>
+      <div class="brand"><img class="brand-icon" src="../assets/app-icon.png" width="34" height="34" alt="">SaveSmart</div>
       <div class="topbar-links">
         <a class="lang-switch" href="../">日本語</a>
         <a class="eyebrow" href="https://apps.apple.com/us/app/savesmart-your-daily-budget/id6759412545?ct=lp">View on App Store →</a>
@@ -284,24 +283,17 @@
 
     <div class="hero-grid">
       <div>
-        <span class="eyebrow">The budget app that stops overspending</span>
-        <h1>See how much you can spend today<br><span class="accent">with SaveSmart.</span></h1>
-        <p class="lead">SaveSmart is a budget app that divides your remaining budget by the days left in a monthly cycle you choose. Compare today's guide with what you spend, then plan for tomorrow.</p>
+        <span class="eyebrow">Your daily budget, at a glance</span>
+        <h1>How much can you<br><span class="accent">spend today?</span></h1>
+        <p class="lead">SaveSmart shows your spendable amount each morning. Log what you spend and see how it shapes tomorrow's guide.</p>
         <a class="btn" href="https://apps.apple.com/us/app/savesmart-your-daily-budget/id6759412545?ct=lp">Download on the App Store<small>Free to start · iPhone</small></a>
+        <p class="hero-underlink"><a href="#try">Try the daily budget demo ↓</a></p>
       </div>
 
-      <div class="today" aria-label="Preview of today's spendable amount">
-        <div class="glow"></div>
-        <div class="clabel"><span>Today's spendable money · Wed 7/16</span><span class="status">On pace</span></div>
-        <div class="amount num"><span class="cur">$</span><span id="amount" data-target="23">23</span></div>
-        <div class="meta num">12 days until the next cycle · calculated from this cycle's balance</div>
-        <svg class="spark" viewBox="0 0 300 44" preserveAspectRatio="none" aria-hidden="true">
-          <polyline fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
-            points="4,30 54,24 104,32 154,18 204,22 254,12 296,16"/>
-          <circle cx="296" cy="16" r="4" fill="var(--dawn)"/>
-        </svg>
-        <span class="grade"><span class="dot"></span>Type: Everyday</span>
-      </div>
+      <figure class="app-preview">
+        <div class="app-screen-crop"><img src="../assets/savesmart-home-appstore.webp" width="600" height="1299" alt="SaveSmart home screen showing today's spendable amount, today's spending, tomorrow's guide and quick entry" fetchpriority="high"></div>
+        <figcaption>Actual app screen with sample data</figcaption>
+      </figure>
     </div>
   </div>
 </header>

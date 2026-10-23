@@ -28,10 +28,8 @@
 <link rel="alternate" hreflang="en" href="https://savesmartbudget.pages.dev/en/">
 <link rel="alternate" hreflang="x-default" href="https://savesmartbudget.pages.dev/">
 
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="assets/favicon-192.png" sizes="192x192" type="image/png">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="icon" href="assets/app-icon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/app-icon.png">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="SaveSmart｜今日いくら使える？を毎朝おしえてくれる家計簿アプリ">
@@ -41,7 +39,7 @@
 <meta property="og:image" content="https://savesmartbudget.pages.dev/assets/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="SaveSmart｜今日使えるお金 ¥3,480・給料日まで残り12日">
+<meta property="og:image:alt" content="SaveSmartのホーム画面と『今日は、いくら使える？』のメッセージ">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="SaveSmart｜今日いくら使える？がわかる家計簿アプリ">
 <meta name="twitter:description" content="毎月の区切り日を自分で設定。残り予算を残り日数で日割りし、「今日使えるお金」の目安を表示するiPhone向け家計簿アプリ。">
@@ -58,8 +56,8 @@
   "description": "毎月自分で決めた区切り日をもとに予算を管理し、残り予算を残り日数で日割りして「今日使えるお金」の目安を示すiPhone向け家計簿アプリ。",
   "url": "https://savesmartbudget.pages.dev/",
   "downloadUrl": "https://apps.apple.com/jp/app/savesmart-今日使えるお金の家計簿/id6759412545",
-  "author": { "@type": "Organization", "name": "WaterTail Studio", "logo": "https://savesmartbudget.pages.dev/assets/apple-touch-icon.png", "sameAs": ["https://x.com/SaveSmart_Japan", "https://apps.apple.com/jp/app/savesmart-今日使えるお金の家計簿/id6759412545"] },
-  "publisher": { "@type": "Organization", "name": "WaterTail Studio", "logo": "https://savesmartbudget.pages.dev/assets/apple-touch-icon.png", "sameAs": ["https://x.com/SaveSmart_Japan", "https://apps.apple.com/jp/app/savesmart-今日使えるお金の家計簿/id6759412545"] },
+  "author": { "@type": "Organization", "name": "WaterTail Studio", "logo": "https://savesmartbudget.pages.dev/assets/app-icon.png", "sameAs": ["https://x.com/SaveSmart_Japan", "https://apps.apple.com/jp/app/savesmart-今日使えるお金の家計簿/id6759412545"] },
+  "publisher": { "@type": "Organization", "name": "WaterTail Studio", "logo": "https://savesmartbudget.pages.dev/assets/app-icon.png", "sameAs": ["https://x.com/SaveSmart_Japan", "https://apps.apple.com/jp/app/savesmart-今日使えるお金の家計簿/id6759412545"] },
   "datePublished": "2026-07-25",
   "dateModified": "2026-10-10",
   "offers": [
@@ -101,26 +99,26 @@
 
 <style>
   :root{
-    --bg:#FBFCFA; --surface:#F0F4F0; --surface-2:#E7EDE8; --border:#DDE6E0;
-    --ink:#14231C; --muted:#5A6A62; --accent:#0FA968; --accent-deep:#0A7A48; --dawn:#E7A94D;
+    --bg:#F3F4F9; --surface:#FFFFFF; --surface-2:#ECEEF6; --border:#E5E7EF;
+    --ink:#1D2030; --muted:#687282; --accent:#586FBB; --accent-deep:#4E65AD; --dawn:#E59028;
     --shadow:0 18px 48px -24px rgba(20,35,28,.35);
     --radius:20px; --maxw:1020px; --money-blue:#3B82E8; --money-red:#E5484D;
   }
   @media (prefers-color-scheme: dark){
     :root{
       --bg:#0B1310; --surface:#121C17; --surface-2:#18251E; --border:#223029;
-      --ink:#E9F1EC; --muted:#97A99F; --accent:#33D98A; --accent-deep:#33D98A; --dawn:#F0BC63;
+      --ink:#E9F1EC; --muted:#97A99F; --accent:#8CA0E3; --accent-deep:#8CA0E3; --dawn:#F0BC63;
       --shadow:0 24px 60px -28px rgba(0,0,0,.65);
     }
   }
   :root[data-theme="light"]{
-    --bg:#FBFCFA; --surface:#F0F4F0; --surface-2:#E7EDE8; --border:#DDE6E0;
-    --ink:#14231C; --muted:#5A6A62; --accent:#0FA968; --accent-deep:#0A7A48; --dawn:#E7A94D;
+    --bg:#F3F4F9; --surface:#FFFFFF; --surface-2:#ECEEF6; --border:#E5E7EF;
+    --ink:#1D2030; --muted:#687282; --accent:#586FBB; --accent-deep:#4E65AD; --dawn:#E59028;
     --shadow:0 18px 48px -24px rgba(20,35,28,.35);
   }
   :root[data-theme="dark"]{
     --bg:#0B1310; --surface:#121C17; --surface-2:#18251E; --border:#223029;
-    --ink:#E9F1EC; --muted:#97A99F; --accent:#33D98A; --accent-deep:#33D98A; --dawn:#F0BC63;
+    --ink:#E9F1EC; --muted:#97A99F; --accent:#8CA0E3; --accent-deep:#8CA0E3; --dawn:#F0BC63;
     --shadow:0 24px 60px -28px rgba(0,0,0,.65);
   }
 
@@ -298,13 +296,14 @@
   .d-barlegend .sw.red{background:var(--dawn)}
   @media (prefers-reduced-motion: reduce){.d-bar-fill{transition:none}}
 </style>
+<link rel="stylesheet" href="assets/app-theme.css">
 </head>
 <body>
 
 <header class="hero">
   <div class="wrap">
     <div class="topbar">
-      <div class="brand"><span class="logo">S</span>SaveSmart</div>
+      <div class="brand"><img class="brand-icon" src="assets/app-icon.png" width="34" height="34" alt="">SaveSmart</div>
       <div class="topbar-links">
         <a class="lang-switch" href="./en/">EN</a>
         <a class="eyebrow" href="https://apps.apple.com/jp/app/savesmart-今日使えるお金の家計簿/id6759412545?ct=lp">App Storeで見る →</a>
@@ -313,24 +312,17 @@
 
     <div class="hero-grid">
       <div>
-        <span class="eyebrow">使いすぎを防ぐ家計簿アプリ</span>
-        <h1>今日使えるお金がわかる<br><span class="accent">家計簿アプリ SaveSmart</span></h1>
-        <p class="lead">残り予算を残り日数で日割りし、今日使えるお金の目安を表示します。今日の支出と比べて、明日以降の使い方を考えられます。</p>
+        <span class="eyebrow">今日のお金が、ひと目でわかる</span>
+        <h1>今日は、<br><span class="accent">いくら使える？</span></h1>
+        <p class="lead">SaveSmartは、今日使えるお金を毎朝表示する家計簿。使った金額を記録すると、明日以降の目安もわかります。</p>
         <a class="btn" href="https://apps.apple.com/jp/app/savesmart-今日使えるお金の家計簿/id6759412545?ct=lp">App Store でダウンロード<small>基本機能は無料・iPhone対応</small></a>
+        <p class="hero-underlink"><a href="#try">今日の支出を試してみる ↓</a></p>
       </div>
 
-      <div class="today" aria-label="今日使えるお金の表示イメージ">
-        <div class="glow"></div>
-        <div class="clabel"><span>今日使えるお金 · 7/16(水)</span><span class="status">標準ペース</span></div>
-        <div class="amount num"><span class="yen">¥</span><span id="amount" data-target="3480">3,480</span></div>
-        <div class="meta num">次の区切りまで残り 12日 ・ 今サイクルの予算から自動計算</div>
-        <svg class="spark" viewBox="0 0 300 44" preserveAspectRatio="none" aria-hidden="true">
-          <polyline fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
-            points="4,30 54,24 104,32 154,18 204,22 254,12 296,16"/>
-          <circle cx="296" cy="16" r="4" fill="var(--dawn)"/>
-        </svg>
-        <span class="grade"><span class="dot"></span>グレード：標準</span>
-      </div>
+      <figure class="app-preview">
+        <div class="app-screen-crop"><img src="assets/savesmart-home-appstore.webp" width="600" height="1299" alt="SaveSmartのホーム画面。今日使えるお金、今日の支出、明日使えるお金、クイック登録が並ぶ" fetchpriority="high"></div>
+        <figcaption>アプリのホーム画面（サンプルデータ）</figcaption>
+      </figure>
     </div>
   </div>
 </header>
@@ -606,25 +598,6 @@
 </footer>
 
 <script>
-  // 今日の金額を 0 → 実額へ滑らかにカウントアップ（瞬時切替は避ける／reduced-motion は尊重）
-  (function(){
-    var el = document.getElementById('amount');
-    if(!el) return;
-    var target = parseInt(el.getAttribute('data-target'), 10) || 0;
-    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if(reduce){ el.textContent = target.toLocaleString('ja-JP'); return; }
-    var dur = 900, start = null;
-    function ease(t){ return 1 - Math.pow(1 - t, 3); } // ease-out cubic
-    function step(ts){
-      if(start === null) start = ts;
-      var p = Math.min((ts - start) / dur, 1);
-      el.textContent = Math.round(target * ease(p)).toLocaleString('ja-JP');
-      if(p < 1) requestAnimationFrame(step);
-    }
-    el.textContent = '0';
-    requestAnimationFrame(step);
-  })();
-
   // 体験デモ: 今日は朝に確定＝不変。使わなかったぶんは翌日にくり越し、「明日は」が再計算される
   (function(){
     var TOTAL=10000, DAYS_AFTER=4, TODAY=2000;
