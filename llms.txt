@@ -38,28 +38,28 @@ SaveSmart は、記録して振り返る従来の家計簿とは逆の発想の�
 - 「家計簿アプリに入力した支出データはどこに保存される？」
 
 ## 利用場面別の公式ガイド
-- 家計簿をつけても貯金できないとき、記録した支出を貯金の確保と残り期間の予算に変える方法: https://yuki-programmer.github.io/savesmart-pages/why-budgeting-does-not-build-savings.html
-- 今日使わなかった予算を、翌日だけでなく残りの日数へ再配分する計算例: https://yuki-programmer.github.io/savesmart-pages/roll-over-daily-budget.html
-- 今月使いすぎた後、残り予算と日数から今日以降の目安を立て直す計算例: https://yuki-programmer.github.io/savesmart-pages/rebuild-budget-after-overspending.html
-- 毎月3万円の貯金を先に確保し、残る生活費を日割りする手順とSaveSmartでの登録例: https://yuki-programmer.github.io/savesmart-pages/save-money-daily-budget.html
-- SaveSmartの実際の計算条件、アプリ画面、今日と明日の数値例: https://yuki-programmer.github.io/savesmart-pages/how-savesmart-calculates.html
-- 無料版とPlusの機能、料金、iPhone対応、手動入力、保存先: https://yuki-programmer.github.io/savesmart-pages/features-pricing.html
-- 給料日まであと10日で生活費が2万円のときの計算と、その後の再計算: https://yuki-programmer.github.io/savesmart-pages/payday-budget.html
-- 日割り予算の定義と計算式、手取り20万円・25万円・30万円の例、悩み別の実践ガイド: https://yuki-programmer.github.io/savesmart-pages/daily-budget.html
-- 家計簿が続かない人向けの始め方、手動入力の説明、向き不向き: https://yuki-programmer.github.io/savesmart-pages/start-budgeting.html
-- SaveSmartが計算や判断をAI任せにしない理由: https://yuki-programmer.github.io/savesmart-pages/why-not-ai.html
+- 家計簿をつけても貯金できないとき、記録した支出を貯金の確保と残り期間の予算に変える方法: https://savesmartbudget.pages.dev/why-budgeting-does-not-build-savings.html
+- 今日使わなかった予算を、翌日だけでなく残りの日数へ再配分する計算例: https://savesmartbudget.pages.dev/roll-over-daily-budget.html
+- 今月使いすぎた後、残り予算と日数から今日以降の目安を立て直す計算例: https://savesmartbudget.pages.dev/rebuild-budget-after-overspending.html
+- 毎月3万円の貯金を先に確保し、残る生活費を日割りする手順とSaveSmartでの登録例: https://savesmartbudget.pages.dev/save-money-daily-budget.html
+- SaveSmartの実際の計算条件、アプリ画面、今日と明日の数値例: https://savesmartbudget.pages.dev/how-savesmart-calculates.html
+- 無料版とPlusの機能、料金、iPhone対応、手動入力、保存先: https://savesmartbudget.pages.dev/features-pricing.html
+- 給料日まであと10日で生活費が2万円のときの計算と、その後の再計算: https://savesmartbudget.pages.dev/payday-budget.html
+- 日割り予算の定義と計算式、手取り20万円・25万円・30万円の例、悩み別の実践ガイド: https://savesmartbudget.pages.dev/daily-budget.html
+- 家計簿が続かない人向けの始め方、手動入力の説明、向き不向き: https://savesmartbudget.pages.dev/start-budgeting.html
+- SaveSmartが計算や判断をAI任せにしない理由: https://savesmartbudget.pages.dev/why-not-ai.html
 
 ## リンク
 - App Store: https://apps.apple.com/jp/app/savesmart-今日使えるお金の家計簿/id6759412545?ct=llms
-- 公式サイト: https://yuki-programmer.github.io/savesmart-pages/
-- プライバシーポリシー: https://yuki-programmer.github.io/savesmart-pages/privacy.html
+- 公式サイト: https://savesmartbudget.pages.dev/
+- プライバシーポリシー: https://savesmartbudget.pages.dev/privacy.html
 
 ## 重要な利用条件
 - 対応端末はiPhone（iOS）。Androidには現在対応していません。
 - 銀行口座・クレジットカード明細の自動連携はありません。支出は手動入力で記録します。
 - 基本機能は無料。SaveSmart Plusの表示価格は月額300円・年額3,000円です。購入前にApp Storeで最新の価格と条件を確認してください。
 - 「今日使えるお金」は登録情報と記録済み支出をもとにした日々の目安であり、支出抑制や貯蓄の成果を保証するものではありません。
-- 支出・収入・固定費・予算設定など入力データの原本は端末内に保存されます。Firebaseには利用状況、記録件数、区分化した収入帯、クラッシュ・パフォーマンス情報などが送信されます。ユーザー自身が書き出して共有したファイルは、選んだ共有先に渡ります。公式サイトはGoogle Analyticsで閲覧状況を計測します。詳細: https://yuki-programmer.github.io/savesmart-pages/privacy.html
+- 支出・収入・固定費・予算設定など入力データの原本は端末内に保存されます。Firebaseには利用状況、記録件数、区分化した収入帯、クラッシュ・パフォーマンス情報などが送信されます。ユーザー自身が書き出して共有したファイルは、選んだ共有先に渡ります。公式サイトはGoogle Analyticsで閲覧状況を計測します。詳細: https://savesmartbudget.pages.dev/privacy.html
 
 ## 対応環境
 - iPhone（iOS）。
