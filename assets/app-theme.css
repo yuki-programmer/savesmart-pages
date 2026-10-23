@@ -30,8 +30,8 @@ header.hero .lead { font-size: clamp(1.05rem, 2vw, 1.2rem); max-width: 31em; lin
 .hero-underlink a { color: var(--muted); text-decoration: underline; text-underline-offset: 4px; }
 
 .app-preview { width: min(100%, 330px); margin: 0; justify-self: center; text-align: center; }
-.app-screen-crop { width: 100%; aspect-ratio: 480 / 990; overflow: hidden; border-radius: 42px; background: var(--surface); box-shadow: 0 30px 62px -32px rgba(36, 43, 78, .45); }
-.app-screen-crop img { display: block; width: 125%; max-width: none; height: auto; transform: translate(-10%, -23.9%); }
+.app-screen-crop { width: 100%; aspect-ratio: 1170 / 2532; overflow: hidden; border: 1px solid var(--border); border-radius: 34px; background: var(--surface); box-shadow: 0 30px 62px -32px rgba(36, 43, 78, .45); }
+.app-screen-crop img { display: block; width: 100%; height: auto; }
 .app-preview figcaption { margin-top: 16px; color: var(--muted); font-size: .82rem; }
 
 section { border-top: 0; padding: 74px 0; }
